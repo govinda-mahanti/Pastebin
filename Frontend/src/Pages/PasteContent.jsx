@@ -42,7 +42,7 @@ const CreatePaste = () => {
       console.log(res.data);
 
       const pasteId = res.data.id;
-      setUrl(`${window.location.origin}/${pasteId}`);
+      setUrl(`${window.location.origin}/paste/${pasteId}`);
     } catch (err) {
       console.error(err);
       alert("Failed to create paste");
