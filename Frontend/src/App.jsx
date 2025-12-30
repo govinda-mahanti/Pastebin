@@ -5,7 +5,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-          <Route path="/:id" element={<GetContent />} />
+          <Route path="/paste/:id" element={<GetContent />} />
           <Route path="/" element={<PasteContent />} />       
       </Routes>
     </Router>
