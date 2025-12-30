@@ -10,7 +10,6 @@ const app = express();
 app.use(cors({ origin: "*" }));
 app.use(express.json());
 
-// 🔥 Attach redis to req
 const redis = await connectRedis();
 
 app.use((req, res, next) => {
@@ -18,7 +17,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// Routes
 app.use("/api", pastebinRoutes);
 
 app.get("/", (req, res) => {
