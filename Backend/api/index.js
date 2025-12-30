@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import { connectRedis } from "../db/db.js";
-import pastebinRoutes from "./routes/pastebinRoutes.js";
+import pastebinRoutes from "../routes/pastebinRoutes.js";
 
 dotenv.config();
 

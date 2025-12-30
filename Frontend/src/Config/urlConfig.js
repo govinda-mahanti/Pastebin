@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://pastebin-backend-woad.vercel.app/api";
+const BASE_URL = "http://localhost:5000/api";
 
 export const createPaste = (data) =>
   axios.post(`${BASE_URL}/paste`, data);
